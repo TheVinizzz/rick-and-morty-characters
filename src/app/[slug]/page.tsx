@@ -42,7 +42,7 @@ const CharacterDetails = ({ params }: { params: { slug: string } }) => {
                 <Lottie
                     options={defaultOptions}
                     height={400}
-                    width={400}
+                    width={300}
                 />
             ) : (
                 <div className="flex flex-col items-center">

@@ -96,7 +96,7 @@ export default function Home() {
         <Lottie
           options={defaultOptions}
           height={400}
-          width={400}
+          width={300}
         />
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-0">
