@@ -33,7 +33,7 @@ const CharacterDetails = ({ params }: { params: { slug: string } }) => {
     return (
         <main className="flex min-h-screen flex-col items-center p-10 antialiased text-slate-500 dark:text-slate-400 bg-[#0F172A] dark:bg-slate-900">
             <div
-                className="w-full text-white cursor-pointer flex items-center"
+                className="w-full text-white cursor-pointer flex items-center mb-6"
                 onClick={handleRedirect}
             >
                 <MdNavigateBefore className="text-3xl" /> Voltar
