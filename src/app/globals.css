@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300,700&display=swap');
+@use postcss-nested;
+
+:root {
+  --border-color: #4f5352;
+  --rick-skin-color: #ebe6e3;
+  --morty-skin-color: #f1daca;
+  --rick-hair-color: #bdcccf;
+  --morty-hair-color: #a68564;
+  --rick-spittle-color: #8bffc5;
+  --rick-shirt-color: #d2eaea;
+  --morty-shirt-color: #fffac0;
+  --rick-hair-shape: polygon(15% 20%, 37% 32%, 49% 0%, 62% 32%, 83% 20%, 74% 43%, 89% 49%, 77% 62%, 88% 71%, 75% 77%, 82% 85%, 73% 84%, 73% 96%, 50% 86%, 25% 96%, 26% 84%, 17% 84%, 24% 77%, 10% 71%, 22% 62%, 9% 49%, 25% 42%);
+  --custom-filter:
+    drop-shadow(0 4px 0 var(--border-color))
+    drop-shadow(4px 0 0 var(--border-color))
+    drop-shadow(0 -4px 0 var(--border-color))
+    drop-shadow(-4px 0 0 var(--border-color));
+  --custom-filter-small:
+    drop-shadow(0 2px 0 var(--border-color))
+    drop-shadow(2px 0 0 var(--border-color))
+    drop-shadow(0 -2px 0 var(--border-color))
+    drop-shadow(-2px 0 0 var(--border-color));
+}
