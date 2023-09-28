@@ -59,10 +59,6 @@ export default function Home() {
               onChange={e => setSearch(e.target.value)}
               color="white"
               label="Buscar Personagem"
-              className="pr-20"
-              containerProps={{
-                className: "min-w-[288px]",
-              }}
               crossOrigin
             />
             <Select 

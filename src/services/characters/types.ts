@@ -23,7 +23,7 @@ export type ICharacter = {
     type: string
     gender: string
     origin: IOrigin
-    location: Location
+    location: ILocation
     image: string
     episode: string[]
     url: string

@@ -1,5 +1,5 @@
 import { api } from '@/services/';
-import { IFilters, IListCharacter } from './types';
+import { ICharacter, IFilters, IListCharacter } from './types';
 
 export const getCharacters = async ({page, gender, status, name}: IFilters) =>  {
     const response = await api.get<IListCharacter>('https://rickandmortyapi.com/api/character', {
@@ -10,5 +10,10 @@ export const getCharacters = async ({page, gender, status, name}: IFilters) =>  
             page
         }
     });
+    return response.data
+}
+
+export const getOneCharacter = async (id: string) =>  {
+    const response = await api.get<ICharacter>(`https://rickandmortyapi.com/api/character/${id}`);
     return response.data
 }
