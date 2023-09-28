@@ -43,12 +43,12 @@ export default function Home() {
         color="blue-gray"
         className="mx-auto mb-5 w-full from-blue-gray-900 to-blue-gray-800 px-4 py-3"
       >
-        <div className="flex flex-wrap items-center justify-between gap-y-4 text-white">
+        <div className="flex flex-wrap flex-col md:flex-row items-center justify-between gap-y-4 text-white">
           <Typography
             as="a"
             href="#"
             variant="h6"
-            className="mr-4 ml-2 cursor-pointer py-1.5"
+            className="mr-4 ml-2 cursor-pointer py-1.5 self-center"
           >
             <Image alt="logo" src={Logo} width={150} />
           </Typography>
