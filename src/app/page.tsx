@@ -14,7 +14,7 @@ import {
   Input,
   Select,
   Option
-} from "@material-tailwind/react";
+} from "@material-tailwind/react"
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState<number>(1);
@@ -59,6 +59,7 @@ export default function Home() {
               onChange={e => setSearch(e.target.value)}
               color="white"
               label="Buscar Personagem"
+              data-testid="input-search"
               crossOrigin
             />
             <Select 
@@ -99,13 +100,13 @@ export default function Home() {
           width={300}
         />
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-0" data-testid="character">
           {data?.results.map((val) => (
             <Card character={val} key={val.id} />
           ))}
         </div>
       )}
-      <Pagination pageIndex={currentPage} setPageIndex={(e: number) => setCurrentPage(e)} pageCount={data?.info.pages} />
+      <Pagination pageIndex={currentPage} setPageIndex={(e: number) => setCurrentPage(e)} pageCount={data?.info.pages || 1} />
     </main>
   )
 }
