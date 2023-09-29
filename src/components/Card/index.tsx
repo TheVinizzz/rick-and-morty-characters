@@ -1,3 +1,4 @@
+"use client"
 import { FC } from "react";
 import { ICard } from "./types";
 import { FaInfoCircle } from 'react-icons/fa'
